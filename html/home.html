@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="Caring Cinema Team">
+	<meta name="description" content="home page">
+	<meta name="keywords" content="home page">
+<title>Home</title>
+</head>
+	<link rel="stylesheet" href="../css/theme.css">
+	<style>
+		#home {
+		pointer-events: none;
+		text-decoration: none;
+		}
+
+		ul {
+			display: inline-block;
+		}
+		li {
+			margin-left: 40px;
+			list-style:square;
+		}
+		.information {
+			font-weight: bold;
+		}
+		img:hover{
+			cursor: pointer;
+		}
+		.each {
+			margin-bottom: 10px;
+			width:500px;
+			border: solid 1px;
+		}
+		#nowshowing,#upcoming {
+			width: 80%;
+			background-color: lightyellow;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			border: solid 5px;
+		}
+		.title {
+			text-decoration: underline;
+			font-weight: bold;
+		}
+		.moviename {
+			padding: 0px;
+			line-height: 0px;
+			margin: 35px 0px 0px 0px;
+		}
+		.center {
+			display: table;
+			margin: auto;
+		}
+		#trailer {
+			width: 80%;
+			background-color: aliceblue;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			border: solid 5px;
+		}
+
+		video {
+			width: 550px;
+			display: table;
+			cursor: pointer;
+			margin: auto;
+			padding-bottom: 20px;
+			padding-top:20px;
+		}
+		#trailhead {
+			display: table;
+			border: solid 2px;
+			margin: auto;
+		}
+	</style>
+<body>
+	<header id="homepage">
+		<img src="../images/caringcinema.png" alt="caring cinema logo" title="caring cinema" id="logo">
+		<h1 id="cc">Caring Cinema</h1>
+	</header>
+	
+	<nav id="menu">
+		<a href="home.html" id="home" >HOME</a>
+		<a href="nowshowing.html">NOW SHOWING</a>
+		<a href="ticket.html">TICKET</a>
+	</nav>
+	<section>
+	<div id="trailer">
+		<h2 id="trailhead">Big Buck - Trailer</h2>
+		<video controls poster="../images/bigbuck.jpg">
+			<source src="https://courses.cs.cityu.edu.hk/cs2204/example/video/BigBuck.mp4" type="video/mp4">
+			<source src="https://courses.cs.cityu.edu.hk/cs2204/example/video/BigBuck.ogg" type="video/ogg">
+			Your browser does not support the video tag.
+		</video>
+	</div>
+	
+	<div id="nowshowing">
+		<div class="center">
+		<h2 class="title">Now showing</h2>
+		<div class="each">
+			<h3 class="moviename">Wonder</h3>
+			<img src="../images/wonder.jpg" alt="wonder">
+			<ul>
+				<li><span class="information">Movie name:</span> Wonder</li>
+				<li><span class="information">Cast:</span> Jacob Tremblay, Julia Roberts</li>
+				<li><span class="information">Director:</span> Stephen Chbosky</li>
+				<li><span class="information">Duration:</span> 113 mins</li>
+			</ul>
+		</div>
+		
+		<div class="each">
+			<h3 class="moviename">Nature</h3>
+			<img src="../images/nature.jpg" alt="nature">
+			<ul>
+				<li><span class="information">Movie name:</span> Nature</li>
+				<li><span class="information">Cast:</span> Tom Holland, Tobey Maguire</li>
+				<li><span class="information">Director:</span>: Benedict Cumberbatch</li>
+				<li><span class="information">Duration:</span> 115 mins</li>
+			</ul>
+		</div>
+		
+		<div class="each">
+			<h3 class="moviename">Wildlife</h3>
+			<img src="../images/wonder.jpg" alt="wonder">
+			<ul>
+				<li><span class="information">Movie name:</span> Wildlife</li>
+				<li><span class="information">Cast:</span> Andrew Garfield, Zendaya</li>
+				<li><span class="information">Director:</span> Angourie Rice</li>
+				<li><span class="information">Duration:</span> 113 mins</li>
+			</ul>
+		</div>
+			</div>
+	</div>
+	
+	<div id="upcoming">
+		<div class="center">
+		<h2 class="title">Upcoming</h2>
+		<div class="each">
+			<h3 class="moviename">Barbeque</h3>
+			<img src="../images/barbecue.jpg" alt="barbeque">
+			<ul>
+				<li><span class="information">Movie name:</span> Barbecue</li>
+				<li><span class="information">Cast:</span> Marisa Tomei, Willem Dafoe</li>
+				<li><span class="information">Director:</span> Rhys Ifans</li>
+				<li><span class="information">Duration:</span> 134 mins</li>
+			</ul>
+		</div>
+		<div class="each">
+			<h3 class="moviename">Spider</h3>
+			<img src="../images/wonder.jpg" alt="casablancca">
+			<ul>
+				<li><span class="information">Movie name:</span> Spider</li>
+				<li><span class="information">Cast:</span> Jacob Batalon, Thomas Haden</li>
+				<li><span class="information">Director:</span> Tom Hardy</li>
+				<li><span class="information">Duration:</span> 129 mins</li>
+			</ul>
+		</div>
+		<div class="each">
+			<h3 class="moviename">Casablanca</h3>
+			<img src="../images/casablanca.png" alt="casablanca">
+			<ul>
+				<li><span class="information">Movie name:</span> Casablanca</li>
+				<li><span class="information">Cast:</span> Alfred Molina, Jamie Foxx</li>
+				<li><span class="information">Director:</span> Anthony Robert</li>
+				<li><span class="information">Duration:</span> 121 mins</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	</section>
+	<footer>
+		<p>
+			<span class="copyright">@Copyright of resources belong to the corresponding copyright owners - fair use education purpose</span> |
+			<a href="home.html">Home |</a>
+			<a href="design.html">Design |</a>
+			<a href="mailto:lekshyuen@gmail.com">Email Us</a>
+		</p>
+	</footer>
+</body>
+</html>

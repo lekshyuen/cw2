@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="Caring Cinema Team">
+	<meta name="description" content="movie ticket">
+	<meta name="keywords" content="movie ticket">
+	<link rel="stylesheet" href="../css/theme.css">
+	<style>
+		section {
+			margin-left: 200px;
+			width:60%;
+			background-color: lightyellow;
+			border:solid 2px;
+			padding-bottom: 20px;
+		}
+		#ticket {
+		pointer-events: none;
+		text-decoration: none;
+		}
+		table {
+			background-color:black;
+			text-align: center;
+		}
+		table tr td {
+			border: 1px solid;
+			padding: 30px;
+		}
+		.seat:hover{
+			background-color: chocolate;
+		}
+		#screen {
+			background-color:gainsboro;
+			font-weight: bold;
+		}
+		.row {
+			background-color:khaki;
+		}
+		.seat {
+			background-color:dodgerblue;
+		}
+		#booked {
+			width:250px;
+			margin-top:30px;
+			margin-bottom: 30px;
+			border: solid 1px;
+			font-size: 20px;
+		}
+		#info {
+			width:  250px;
+			border:solid 2px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			font-size: 20px;
+		}
+	</style>
+<title>Ticket</title>
+</head>
+
+<body>
+	<header>
+		<img id="logo" src="../images/caringcinema.png" alt="caring cinema logo" title="caring cinema">
+		<h1 id="cc">Caring Cinema</h1>
+	</header>
+	
+	<nav id="menu">
+		<a href="home.html">HOME</a>
+		<a href="nowshowing.html">NOW SHOWING</a>
+		<a href="ticket.html" id="ticket">TICKET</a>
+	</nav>
+	
+	<section>
+		<div id="info">
+		<p>Cinema - Festival Walk</p>
+		<p>Movie - Big Buck</p>
+		<p>20 February, Wed - 11:30AM</p></div>
+		<table>
+			<tr>
+				<td class="row">Row</td>
+				<td colspan="4" id="screen">Screen</td>
+			</tr>
+			<tr>
+				<td class="row">A</td>
+				<td class="seat">1</td>
+				<td class="seat">2</td>
+				<td class="seat">3</td>
+				<td class="seat">4</td>
+			</tr>
+			<tr>
+				<td class="row">B</td>
+				<td class="seat">1</td>
+				<td class="seat">2</td>
+				<td class="seat">3</td>
+				<td class="seat">4</td>
+			</tr>
+			<tr>
+				<td class="row">C</td>
+				<td class="seat">1</td>
+				<td class="seat">2</td>
+				<td class="seat">3</td>
+				<td class="seat">4</td>
+			</tr>
+		</table>
+		<div id="booked">
+			<p>Seat Booked</p>
+			<p>B1, B2</p>
+		</div>
+		<form action="print.html">
+			<button>Confirm</button>
+		</form>
+	</section>
+	
+	<footer>
+		<p>
+			<span class="copyright">@Copyright of resources belong to the corresponding copyright owners - fair use education purpose</span> |
+			<a href="home.html">Home |</a>
+			<a href="design.html">Design |</a>
+			<a href="mailto:lekshyuen@gmail.com">Email Us</a>
+		</p>
+	</footer>
+</body>
+</html>

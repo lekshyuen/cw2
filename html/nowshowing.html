@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="Caring Cinema Team">
+	<meta name="description" content="now showing movies">
+	<meta name="keywords" content="now showing movies">
+	<link rel="stylesheet" href="../css/theme.css">
+	<style>
+		section {
+			width: 60%;
+			background-color:lightyellow;
+			margin: auto;
+			align-content: center;
+			border: solid 2px;
+		}
+		#nshead,#cinemahead {
+			display: table;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border: solid 2px #FF0004;
+			font-size: 35px;
+		}
+		#ns {
+		pointer-events: none;
+		text-decoration: none;
+		}
+		.details {
+			display: inline-block;
+			width: 130px;
+		}
+		.info {
+			display: inline-block;
+		}
+		.onemovie {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		#location {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		form img {
+			height: 150px;
+			width: 200px;
+		}
+		#location img {
+			width: 650px;;
+		}
+		.ticke:hover{
+			background-color:cadetblue;
+		}
+		label {
+			font-size: 20px;
+		}
+		.moviename,.date,.time {
+			margin-top: 18px;
+			margin-bottom: 18px;
+		}
+		#selectcinema {
+			font-weight: bold;
+		}
+		#selectcinema select {
+			width: 500px;
+			height:30px;
+		}
+		#nsgroup {
+			display: table;
+		}
+		.locate {
+			text-decoration: underline;
+			font-size: 20px;
+		}
+	</style>
+<title>Now Showing</title>
+</head>
+
+<body>
+	<header>
+		<img id="logo" src="../images/caringcinema.png" alt="caring cinema logo" title="caring cinema">
+		<h1 id="cc">Caring Cinema</h1>
+	</header>
+	
+	<nav id="menu">
+		<a href="home.html">HOME</a>
+		<a href="nowshowing.html" id="ns">NOW SHOWING</a>
+		<a href="ticket.html">TICKET</a>
+	</nav>
+	<section>
+		<div id="nsgroup">
+		<h2 id="nshead">Now Showing Movies</h2>
+		<div id="all">
+	<form action="print.html">
+		<div id="selectcinema">
+		<label for="cinema">Select Cinema: </label>
+		<select id="cinema" name="cinema">
+			<option value="fw">City Cinema - Festival Walk</option>
+			<option value="cp">City Cinema - City Plaza</option>
+			<option value="gp">City Cinema - Grand Plaza</option>
+		</select></div>
+		<div class="onemovie">
+		<img class="movieimg" src="../images/bigbuck.jpg" alt="bigbuck" title="Bigbuck">
+		<div class="info">
+			<div class="moviename">
+		<label for="bigbuckticket" class="details">Movie name: </label>
+		<input id="bigbuckticket" type="text" name="movie" value="Big Buck"> 
+				</div>
+		<div class="date">
+		<label for="bigbuckdate" class="details">Date:</label>
+		<select id="bigbuckdate" name="bigbuckdate">
+			<option value="22may">22 May, Wed</option>
+			<option value="23may">23 May, Thu</option>
+			<option value="25may">25 May, Sat</option>
+		</select>
+		</div>
+		<div class="time">
+		<label for="bigbucktime" class="details">Show Time: </label>
+		<select id="bigbucktime" name="bigbucktime">
+			<option value="1000">10:00 AM</option>
+			<option value="1030">10:30 AM</option>
+			<option value="1430">02:30 PM</option>
+			<option value="1530">03:30 PM</option>
+		</select>
+		</div>
+			<input type="submit" value="Buy Ticket">
+			</div>
+		</div>
+		<div class="onemovie">
+		<img class="movieimg" src="../images/wonder.jpg" alt="wonder" title="wonder">
+		<div class="info">
+			<div class="moviename">
+		<label for="wonderticket" class="details">Movie name: </label>
+		<input id="wonderticket" type="text" name="movie" value="Wonder"> 
+				</div>
+		<div class="date">
+		<label for="bigbuckdate" class="details">Date:</label>
+		<select id="wonderdate" name="bigbuckdate">
+			<option value="22may">22 May, Wed</option>
+			<option value="23may">23 May, Thu</option>
+			<option value="25may">25 May, Sat</option>
+		</select>
+		</div>
+		<div class="time">
+		<label for="bigbucktime" class="details">Show Time: </label>
+		<select id="wondertime" name="bigbucktime">
+			<option value="1000">10:00 AM</option>
+			<option value="1030">10:30 AM</option>
+			<option value="1430">02:30 PM</option>
+			<option value="1530">03:30 PM</option>
+		</select>
+		</div>
+		<input type="submit" value="Buy Ticket">
+			</div>
+		</div>
+		<div class="onemovie">
+		<img class="movieimg" src="../images/nature.jpg" alt="nature" title="nature">
+		<div class="info">
+			<div class="moviename">
+		<label for="natureticket" class="details">Movie name: </label>
+		<input id="natureticket" type="text" name="movie" value="Nature"> 
+				</div>
+		<div class="date">
+		<label for="naturedate" class="details">Date:</label>
+		<select id="naturedate" name="naturedate">
+			<option value="22may">22 May, Wed</option>
+			<option value="23may">23 May, Thu</option>
+			<option value="25may">25 May, Sat</option>
+		</select>
+		</div>
+		<div class="time">
+		<label for="naturetime" class="details">Show Time: </label>
+		<select id="naturetime" name="naturetime">
+			<option value="1000">10:00 AM</option>
+			<option value="1030">10:30 AM</option>
+			<option value="1430">02:30 PM</option>
+			<option value="1530">03:30 PM</option>
+		</select>
+		</div>
+		<input type="submit" value="Buy Ticket">
+			</div>
+		</div>
+		<div class="onemovie">
+		<img class="movieimg" src="../images/wildlife.jpg" alt="wildlife" title="Wildlife">
+		<div class="info">
+			<div class="moviename">
+		<label for="wildlifeticket" class="details">Movie name: </label>
+		<input id="wildlifeticket" type="text" name="movie" value="Wildlife"> 
+				</div>
+		<div class="date">
+		<label for="wildlifedate" class="details">Date:</label>
+		<select id="wildlifedate" name="bigbuckdate">
+			<option value="22may">22 May, Wed</option>
+			<option value="23may">23 May, Thu</option>
+			<option value="25may">25 May, Sat</option>
+		</select>
+		</div>
+		<div class="time">
+		<label for="wildlifetime" class="details">Show Time: </label>
+		<select id="wildlifetime" name="bigbucktime">
+			<option value="1000">10:00 AM</option>
+			<option value="1030">10:30 AM</option>
+			<option value="1430">02:30 PM</option>
+			<option value="1530">03:30 PM</option>
+		</select>
+		</div>
+		<input type="submit" value="Buy Ticket">
+			
+			</div>
+		</div>
+	</form>
+	</div>
+	<div id="location">
+		<h3 id="cinemahead">Cinemas location</h3>
+		<p class="locate">City Cinema - Festival Walk</p>
+		<img src="../images/fwmap.jpg" alt="festival walk">
+		
+		<p class="locate">City Cinema - City Plaza</p>
+		<img src="../images/cpmap.jpg" alt="city plaza">
+		
+		<p class="locate">City Cinema - Grand Plaza</p>
+		<img src="../images/gpmap.jpg" alt="grand plaza">
+	</div>
+			</div>
+	</section>
+	<footer>
+		<p>
+			<span class="copyright">@Copyright of resources belong to the corresponding copyright owners - fair use education purpose</span> |
+			<a href="home.html">Home |</a>
+			<a href="design.html">Design |</a>
+			<a href="mailto:lekshyuen@gmail.com">Email Us</a>
+		</p>
+	</footer>
+</body>
+</html>

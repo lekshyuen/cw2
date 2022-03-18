@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="Caring Cinema Team">
+	<meta name="description" content="print ticket">
+	<meta name="keywords" content="print ticket">
+	<link rel="stylesheet" href="../css/theme.css">
+	<style>
+		 @media print {
+               .noprint {
+                  visibility: hidden;
+               }
+            }
+		.info {
+			display: inline-block;
+			width: 150px;
+		}
+		form {
+			display:inline-block;
+			background-color:lightyellow;
+			margin-right: 30px;
+			margin-bottom: 35px;
+			padding: 30px;
+			border: solid 1px;
+		}
+	</style>
+<title>Print ticket</title>
+</head>
+
+<body>
+	<header class="noprint">
+		<img id="logo" src="../images/caringcinema.png" alt="caring cinema logo" title="caring cinema">
+		<h1 id="cc">Caring Cinema</h1>
+	</header>
+	
+	<nav id="menu" class="noprint">
+		<a href="home.html">HOME</a>
+		<a href="nowshowing.html">NOW SHOWING</a>
+		<a href="ticket.html">TICKET</a>
+	</nav>
+	
+	<section>
+		<form id="first">
+			<p><span class="info">Cinema: </span>
+		  <input type="text" name="cinema" value="Festival Walk"></p>
+			<p><span class="info">Movie: </span>
+		  <input type="text" name="movie" value="Big Buck"></p>
+			<p><span class="info">Date and Time: </span>
+		  <input type="text" name="datetime" value="22 May 2022 Wed - 11:30AM"></p>
+			<p><span class="info">House No.: </span>
+		  <input type="text" name="houseno" value="4"></p>
+			<p><span class="info">Seat: </span>
+		  <input type="text" name="seat" value="A3"></p>
+		</form>
+		
+	</section>
+	
+	<footer class="noprint">
+		<p>
+			<span class="copyright">@Copyright of resources belong to the corresponding copyright owners - fair use education purpose</span> |
+			<a href="home.html">Home |</a>
+			<a href="design.html">Design |</a>
+			<a href="mailto:lekshyuen@gmail.com">Email Us</a>
+		</p>
+	</footer>
+</body>
+</html>
